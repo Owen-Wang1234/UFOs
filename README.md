@@ -31,3 +31,19 @@ Below the page script within the HTML Body section, the JavaScript files are inv
 
 ### Stylesheet
 The web page is customized to take on a dark background with light text. This is done by writing some lines into the CSS file to set the text color of the whole Body section accordingly while the HTML file has dark background classes added to various sections of the page. The heading jumbotron gets linked to a space image selected to serve as a background using some lines of code in the CSS file.
+
+### Modifications
+At the request of the client, the web page was adjusted to allow the user to filter the data with additional criteria (including the city, state, country, and shape of the sighting). During the course of modification, the button was removed, so the filtration function was prompted by entering anything in the input boxes or changing anything in the input boxes. User interaction with the input forms prompts a function that adds or clears the filter criteria and then calls the function that will use the resulting filters to sift through the data and build a table to present the results. The function that actually filters the data is modified to account for the fact the filters are in a JavaScript object that pairs the parameter with the input criterion, if one was entered.
+
+## Results
+The web page now looks like this:
+
+![The UFO Finder page when initially loaded](https://github.com/Owen-Wang1234/UFOs/blob/main/images/front.png)
+
+The page initially loads all the sightings from the provided data file, which contains sightings in the United States between January 1, 2010 and January 13, 2010. The form for filters consist of input text boxes where the user can enter a criteria for filtering the data according to certain parameters including the date, city, state, country, and shape. Placeholder text (shown in gray) serves as an example of how the entry should be formatted; the user's input is shown as solid black text. The JavaScript application is able to filter the data using more than one criteria, as shown:
+
+![Using one filter](https://github.com/Owen-Wang1234/UFOs/blob/main/images/filter.png)
+
+![Using two filters](https://github.com/Owen-Wang1234/UFOs/blob/main/images/2filters.png)
+
+Removing the text from the input box clears the criterion from that parameter. If the user clears all the boxes, that clears all the filters and resets the data table to show all the sightings.
