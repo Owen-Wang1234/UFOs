@@ -36,6 +36,8 @@ The web page is customized to take on a dark background with light text. This is
 At the request of the client, the web page was adjusted to allow the user to filter the data with additional criteria (including the city, state, country, and shape of the sighting). During the course of modification, the button was removed, so the filtration function was prompted by entering anything in the input boxes or changing anything in the input boxes. User interaction with the input forms prompts a function that adds or clears the filter criteria and then calls the function that will use the resulting filters to sift through the data and build a table to present the results. The function that actually filters the data is modified to account for the fact the filters are in a JavaScript object that pairs the parameter with the input criterion, if one was entered.
 
 ## Results
+The result is deployed to this URL: https://owen-wang1234.github.io/UFOs/
+
 The web page now looks like this:
 
 ![The UFO Finder page when initially loaded](https://github.com/Owen-Wang1234/UFOs/blob/main/images/front.png)
